@@ -1,0 +1,60 @@
+body, html
+{
+ height: 100%;
+ width: 100%;
+ margin: 0px;
+}
+
+#container
+{
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "i1 i2 i2 i2 i2 i2"
+        "i1 i3 i3 i3 i4 i4"
+        "i1 i3 i3 i3 i4 i4"
+        "i1 i5 i5 i5 i5 i5";
+}
+
+
+
+.itemGrid
+{
+    border-radius: 5px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.item1
+{
+    grid-area: i1;
+    background-color: darkseagreen;
+}
+
+.item2
+{
+    grid-area: i2;
+    background-color: darkslateblue;
+}
+
+.item3
+{
+    grid-area: i3;
+    background-color: darkviolet;
+}
+
+.item4
+{
+    grid-area: i4;
+    background-color: firebrick;
+}
+
+.item5
+{
+    grid-area: i5;
+    background-color: midnightblue;
+}
+

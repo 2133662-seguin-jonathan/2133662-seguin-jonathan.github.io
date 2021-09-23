@@ -1,0 +1,76 @@
+body
+{
+    margin: 0px;
+}
+
+#container
+{
+    display: flex;
+    align-content: stretch;
+    min-height: 100vh;
+    background-color: blueviolet;
+    width:100vw;
+    flex-direction: row;
+}
+
+#containerNav
+{
+    display: flex;
+    min-width: 10%;
+    flex-grow: 1;
+}
+
+#containerDroit
+{
+    display: flex;
+    background-color: coral;
+    min-width: 50%;
+    flex-grow: 5;
+    flex-direction: column;
+}
+
+#containerDroit2
+{
+    display: flex;
+    background-color: darkmagenta;
+    flex-direction: row;
+}
+
+#nav
+{
+    
+    flex-basis: 100%;
+    background-color: cornflowerblue;
+}
+
+#footer,#header
+{
+    height: 20vh;
+    background-color: green;
+    min-width: 100%;
+}
+
+#article
+{
+    background-color: white;
+    min-height: 60vh;
+    flex-basis: 75%;
+    
+}
+
+#aside
+{
+    background-color: goldenrod;
+    min-height: 60vh;
+    flex-basis: 25%;
+}
+
+#header
+{
+    align-self: flex-start;
+}
+
+#footer
+{
+    align-self: flex-end;
+}

@@ -1,0 +1,37 @@
+#titrePage
+{
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+
+#retour
+{
+    color: firebrick;
+    font-size: 25px;
+    text-decoration-line  : underline ;
+}
+
+.paragraphe
+{
+    text-align: justify;
+}
+
+.specialLetter
+{
+    font-size: 2em;
+    font-style: italic;
+    color: green;
+}
+
+.specialLetter1
+{
+    font-size: 2em;
+    font-style: italic;
+    color: purple;
+}
+
+#hover:hover
+{
+    color: navy;
+}
