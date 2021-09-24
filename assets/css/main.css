@@ -2293,6 +2293,12 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
+	#nav a:hover{
+		transform: scale(1.2);
+		transition-duration: 600ms;
+		transition-property: all;
+	}
+
 		#nav > ul {
 			line-height: 0px;
 			position: relative;
