@@ -1,0 +1,4 @@
+Il y a des ajustement que je ne sais pas pourquoi ils ne se 
+font pas en media queries, mais se font hors media queries.
+Et j'ai essayer de align certains contenu dont le titre et 
+le texte dans la zone credit, mais sans succès.

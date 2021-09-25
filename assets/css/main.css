@@ -2293,9 +2293,9 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-	#nav a:hover{
-		transform: scale(1.2);
-		transition-duration: 600ms;
+	#nav li:hover{
+		transform: rotate(360deg);
+		transition-duration: 700ms;
 		transition-property: all;
 	}
 
@@ -2383,7 +2383,7 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover {
-				color: #ef8376;
+				color: #f2ff00;
 			}
 
 			.dropotron li a, .dropotron li span {

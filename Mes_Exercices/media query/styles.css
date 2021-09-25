@@ -1,0 +1,286 @@
+body
+{
+    margin: 0px;
+    width: 100%;
+}
+/* Grid de haut de page*/
+#hautPage
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 5vh;
+
+    grid-template-areas: 
+    "titreZone"
+    "menuZone"
+    ;
+}
+
+#titreGrid
+{
+    grid-area: titreZone;
+    background-color: cornflowerblue;
+}
+
+#menuGrid
+{
+    grid-area: menuZone;
+}
+    /*Grid zone titre*/
+#titre
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas:
+    ". titreText ."
+    ". . ."
+    ". citTitre ."
+    ;
+    text-align: center;
+    
+}
+
+#textTitre
+{
+    grid-area: titreText;
+    font-size: 3em;
+    color: white;
+    margin-top: 10vh;
+}
+
+#citationTitre
+{
+    grid-area: citTitre;
+    color: white;
+    font-size: 1em;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+    /*Grid zone menu*/
+#menuGrid
+{
+    display: grid;
+    background-color: gray;
+    grid-template-columns: repeat(10,5%);
+    grid-template-areas: 
+    "l1 l2 l3 l4 . . . . . ."
+    ;
+}
+
+.lien1
+{
+    grid-area: l1;
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lien2
+{
+    grid-area: l2;
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lien3
+{
+    grid-area: l3;
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lien4
+{
+    grid-area: l4;
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lien1:hover
+{
+    background-color: lightgrey;
+}
+.lien2:hover
+{
+    background-color: lightgrey;
+}
+.lien3:hover
+{
+    background-color: lightgrey;
+}
+.lien4:hover
+{
+    background-color: lightgrey;
+}
+
+
+
+/* Grid corps page */
+#corps
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "creditGrid artGrid"
+    ;
+}
+
+    /* Zone Grid Credit */
+#credit
+{
+    grid-area: creditGrid;
+    display: grid;
+    grid-template-rows: 5% 10% 5% 80%;
+    height: 100%;
+    grid-template-areas: 
+    "titreCreditGrid"
+    "imgCreditGrid"
+    "textMoiGrid"
+    "."
+    ;
+    background-color: lightsteelblue;
+    padding-left: 1vw;
+}
+
+#titreCredit
+{
+    grid-area: titreCreditGrid;
+    margin-bottom: 1vh;
+    margin-top: 5vh;
+    
+
+}
+#imgCredit
+{
+    margin-top: 7vh;
+    grid-area: imgCreditGrid;
+    border-radius: 5px;
+}
+#textMoi
+{
+    text-align: justify;
+    margin-top: 40vh;
+    grid-area: textMoiGrid;
+
+}
+
+    /* Zone Articles Grid */
+#contArticle
+{
+ display: grid;
+ height: 100%;
+ padding-left: 1vw;
+ grid-template-areas: 
+ "art1Grid"
+ "artGrid2"
+ ;
+}
+
+        /* Zone article 1 */
+#article1
+{
+    grid-area: art1Grid;
+    margin-bottom: 5vh;
+    grid-template-areas: 
+    "titreArtGrid"
+    "descArtGrid"
+    "imgArtGrid"
+    "textArtGrid"
+    ;
+}
+.imgArt
+{
+    grid-area: imgArtGrid;
+    
+}
+.textArt
+{
+    margin-bottom: 2vh;
+}
+
+#footerZone
+{
+    height: 5vh;
+    background-color: darkseagreen;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 2em;
+    width: 100%;
+}
+
+/* redimensionnement pour écrn à 600px */
+@media screen and (min-width: 600px) and (max-width: 1023px) 
+{
+    /* J'ai laisser la modification de la 
+    couleur du footer pour pouvoir resize correctement */
+    #footerZone 
+    {
+        background-color: blueviolet;
+    }
+
+    #menuGrid
+{
+    display: grid;
+    background-color: gray;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+    "l1"
+    "l2"
+    "l3"
+    "l4 "
+    ;
+    text-align: center;
+    align-content: center;
+}
+
+    #hautPage
+    {
+        grid-template-rows: 30vh 30vh;
+    }
+
+
+    #corps
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: 
+        "creditGrid"
+        "artGrid"
+        ;
+            
+    }
+
+   #imgCredit
+   {
+       max-width: 700vw;
+       max-height: 250vh;
+   }
+/* bon je ne comprends pas pourquoi les images 
+veulent pas se redimensionner alors que sans media querie
+il l'accepte dans les deux cas différents. ci-haut 
+et ci-bas */
+   img .imgArt
+   {
+        max-height: 200vh;
+        max-width: 800vh;
+   }
+
+}
