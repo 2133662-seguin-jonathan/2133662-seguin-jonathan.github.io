@@ -4,7 +4,7 @@ function clock()
 let actualDate = new Date();
 
 let hour = actualDate.getHours();
-let month = actualDate.getMonth();
+let month = actualDate.getMonth()+1;
 let day = actualDate.getDay()
 let year = actualDate.getFullYear()
 let date = actualDate.getDate();
