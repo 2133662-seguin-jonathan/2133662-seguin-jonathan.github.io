@@ -1,0 +1,66 @@
+body
+{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+#list_zone
+{
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.task_decoration
+{
+    margin-top: 2vh;
+    margin-left: 5px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.task_decoration:hover
+{
+    cursor:pointer;
+}
+
+#button_add
+{
+    background-color: slateblue;
+    color:black;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    font-size: medium;
+    text-align: center;
+    margin-left: 0.3em;
+}
+
+#button_add:hover
+{
+    background-color: yellow;
+    color:black;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#input_task
+{
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: black;
+    color: brown;
+    background-color: rgba(204, 234, 229, 0.79);
+}
