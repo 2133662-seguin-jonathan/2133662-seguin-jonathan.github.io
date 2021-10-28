@@ -33,6 +33,15 @@ body {
 	line-height: 1;
 }
 
+#logo_proj
+{
+	height: 36.5px;
+	width: 180px;
+	position: absolute;
+	top: 0.3vh;
+	right: 0.2vw;
+}
+
 ol, ul {
 	list-style: none;
 }
