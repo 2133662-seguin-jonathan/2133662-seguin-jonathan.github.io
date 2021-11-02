@@ -2186,7 +2186,9 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/vector-background.png");
+		background-image: url("../../images/background_blend.jpg");
+		background-color: #189999;
+		background-blend-mode:multiply;
 		background-size: cover ;
 		background-position: center center;
 		background-attachment: fixed;
