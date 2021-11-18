@@ -1,0 +1,57 @@
+body
+{
+    height: 100%;
+    width: 100%;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+ul
+{
+    list-style-type: none;
+    
+}
+
+#main_container
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+#menu_zone
+{
+    border: 5px black solid;
+    border-radius: 5px;
+    width: 25vw;
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+#title
+{
+    
+    align-self: center;
+}
+
+#list_link
+{
+    padding-left: 0px;
+    align-self: center;
+}

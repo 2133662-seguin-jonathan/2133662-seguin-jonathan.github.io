@@ -1,0 +1,9 @@
+small
+{
+    color: red;
+}
+
+input:focus
+{
+    background-color: rgba(19, 158, 245, 0.1);
+}

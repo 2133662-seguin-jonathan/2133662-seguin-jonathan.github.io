@@ -1,0 +1,82 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+input, select
+{
+    border-radius: 5px;
+    border-width: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+/* Containers */
+#main_container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+    #form_zone
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.60);
+        border-radius: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+        #affiche_zone
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            #zone_text1, #zone_text2
+            {
+                padding: 50px;
+                background-color: rgba(255, 255, 255, 0.90);
+                border-radius: 20px;
+                text-align: center;
+            }
+        
+        #select_zone
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #choix_text
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #zone_taille
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #zone_couleur
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Concours Montpellier</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script defer src="JS/script.js"></script>
+
+  </head>
+
+  <body>
+    <div id="main_container">
+      <!-- Le texte est gérer par script.js -->
+      <h1 id="titre"></h1>
+
+      <h3 id="sous-titre">Fiche d'inscription du participant</h3>
+
+      <form 
+        action="https://mathieufrechette.ca/validation.php" 
+        method="post" 
+        name="formulaire" 
+        id="formulaire" 
+        onsubmit="return ValidationFormulaire()">
+
+        <!-- Formulaire information propriétaire -->
+        <fieldset id="form_prop">
+
+          <legend>Informations propriétaire</legend>
+          
+          <div id="nom_prop_div">
+            <label for="proprietaire_nom">Nom : </label>
+            <input type="text" id="nom_prop" name="proprietaire_nom"  required>
+            <small></small>
+          </div>
+          <div id="prenom_div">
+            <label for="proprietaire_prenom">Prénom : </label>
+            <input type="text" id="prenom" name="proprietaire_prenom" required>
+            <small></small>
+          </div>
+          <div id="adr_div">
+            <label for="adr">Adresse : </label>
+            <input type="text" id="adr" name="adr">
+            <small></small>
+          </div>
+          <div id="ville_div">
+            <label for="ville">Ville : </label>
+            <input type="text" id="ville" name="ville">
+            <small></small>
+          </div>
+          <div id="tel_div">
+            <label for="tel">Téléphone : </label>
+            <input type="tel" id="tel" name="tel">
+            <small></small>
+          </div>
+          <div id="email_div">
+            <label for="email">Courriel : </label>
+            <input type="email" id="email" name="email" required>
+            <small></small>
+          </div>
+        </fieldset>
+
+        <!-- Formulaire  participant-->
+        <fieldset id="form_part">
+
+          <legend>Informations participant</legend>
+          
+          <div id="nom_part_div">
+            <label for="nom_part">Nom : </label>
+            <input type="text" id="nom_part" name="nom_part" required>
+            <small></small>
+          </div>
+          <div id="race_div">
+            <label for="race">Race : </label>
+            <select id="race" name="race" required>
+              <option value="Alpine">Alpine</option>
+              <option value="Saanen">Saanen</option>
+              <option value="Nubienne">Nubienne</option>
+              <option value="Toggenbourg">Toggenbourg</option>
+              <option value="LaMancha">LaMancha</option>
+            </select>
+            <img id="image"src="images/race_alpine.jpg">
+            <small></small>
+          </div>
+          <div id="sexe_div">
+            <p id="titre_sexe">Sexe : </p>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="sexe" checked required>
+            <label for="femelle">Femelle </label>
+            <input type="radio" id="femelle" name="sexe" required>
+            <small></small>
+          </div>
+          <div id="robe_div">
+            <label for="robe">Couleur de la robe : </label>
+            <input type="text" id="robe" name="robe" required>
+            <small></small>
+          </div>
+          <div id="garrot_div">
+            <label for="garrot">Taille au garrot : </label>
+            <input type="number" id="garrot" name="garrot" required>
+            <small></small>
+          </div>
+          <div id="note_div">
+            <label for="note">Notes : </label>
+            <textarea id="note" name="note"></textarea>
+            <small></small>
+          </div>
+        </fieldset>
+
+        <button id="submit" type="submit" >Soumettre l'inscription</button>
+      </form>
+
+    </div>
+  </body>
+
+</html>

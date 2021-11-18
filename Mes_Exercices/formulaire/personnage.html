@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Formulaire </title>
+    <link rel="stylesheet" href="CSS/personnage.css">
+    <script defer scr="JS/script.js"></script>
+
+  </head>
+
+  <body>
+
+    
+        
+        <form action="/traitement.php" method="post">
+            <fieldset>
+                <legend>Information de l'usager</legend>
+                <div>
+                    <label for="nom_user" >Nom de l'usager :</label>
+                    <input type="text" id="nom_user" name="nom_user">
+                </div>
+                
+                <div>
+                    <label for="email" >E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="date" >Date de naissance :</label>
+                    <input type="date" id="date" name="date">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Information du personnage</legend>
+                <div>
+                    <label for="nom_perso" >Nom :</label>
+                    <input type="text" id="nom_perso" name="nom_perso">
+                </div>
+                
+                <div>
+                    <label for="classe" >Classe :</label>
+                    <select id="classe" name="classe">
+                        <option value="0">Guerrier</option>
+                        <option value="1">Healer</option>
+                        <option value="2">Sniper</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="bio">Biographie :</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Soumettre</button>
+        </form>
+    
+
+  </body>
+
+</html>

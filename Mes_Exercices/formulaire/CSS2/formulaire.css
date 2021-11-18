@@ -1,0 +1,29 @@
+.form_row {
+    margin-bottom: 30px;
+}
+
+input, select, textarea {
+    display: block;
+    margin: 5px 0px 0px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;    
+}
+
+button {
+    appearance:none;
+    -webkit-appearance:none;
+
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+}
+
+small {
+    color: red;
+}

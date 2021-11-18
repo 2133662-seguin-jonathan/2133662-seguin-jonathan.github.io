@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Modification de texte </title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script defer src="JS/script.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="main_container">
+
+        <div id="form_zone">
+
+            <h1 id="titre">Modification de texte</h1>
+
+            <div id="affiche_zone">
+                <span id="zone_text1" style="font-size: 24px;" data-couleur="#000000">Zone #1</span>
+                <span id="zone_text2" style="font-size: 24px;" data-couleur="#000000">Zone #2</span>
+            </div>
+
+            <div id="select_zone">
+                <label for="choix_zone">Zone à modifier</label>
+                <select oninput="ChangementZone()" id="choix_zone" name="choix_zone">
+                    <option value="1">Zone#1</option>
+                    <option value="2">Zone#2</option>
+                </select>
+            </div>
+
+            <div id="choix_text">
+                <label for="affiche_text">Texte à afficher</label>
+                <input oninput="ChangementTexte()" type="text" name="affiche_text" id="affiche_text"value="Zone #1">
+            </div>
+
+            <div id="zone_taille">
+                <label for="taille_police">Taille de la police</label>
+                <input oninput="ChangementTaille()" type="number" name="taille_police" id="taille_police" value="24">
+            </div>
+
+            <div id="zone_couleur">
+                <label for="change_couleur">Couleur</label>
+                <input oninput="ChangementCouleur()" type="color" name="change_couleur" id="change_couleur">
+            </div>
+
+        </div>
+
+    </div>
+
+
+  </body>
+
+</html>
