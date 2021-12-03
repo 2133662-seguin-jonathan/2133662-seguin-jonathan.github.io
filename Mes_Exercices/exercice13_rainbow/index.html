@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Rainbow </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f2bff0c0f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="default.css" id="theme_css">
+    <script defer src="script.js"></script>
+    
+
+  </head>
+
+  <body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Rainbow mode</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item" id="navIcone">
+                    <i class="fas fa-toggle-off" onclick="ChangerBackground()" id="rainbowIcone" style="font-size:40px; color: black;"></i>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div id="back">
+        <label for="local">Stockage local</label>
+        <input type="checkbox" name="local" id="local" >
+        <br>
+        <label for="session">Stockage session</label>
+        <input type="checkbox" name="session" id="session">
+        <br>
+        <button id="clearStock" onclick="ClearStockage()">Clear Stockage</button>
+    </div>
+  </body>
+
+</html>
